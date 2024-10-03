@@ -6,7 +6,7 @@ This repository contains the implementation of our novel generative approach for
 
 Unmanned aerial vehicles (UAVs) have emerged as valuable tools in intelligent transportation systems, offering potential for real-time traffic monitoring and emergency response. However, the limited flight endurance of UAVs restricts their ability to collect large amounts of traffic event data crucial for data-driven models. While simulation platforms provide an alternative data source, a significant visual gap persists between synthetic and real images. Given the unique characteristics of UAV perspectives, where objects typically appear smaller, and the challenges faced by existing generative approaches in maintaining structural and semantic consistency, this paper proposes a novel generative approach. Our method integrates semantic mask guidance with a style-modulated Transformer-based GAN architecture to address these issues. Our approach first utilizes the Segment-Anything Model (SAM) and Contrastive Language-Image Pre-training (CLIP) to extract semantic masks from GTA V simulated images. Subsequently, we introduce Spatially-Attentive Denormalization Modules (SADM) within the generator. These modules incorporate semantic mask statistics to enhance image quality and maintain consistency. Furthermore, we develop a perceptual discriminator incorporating a "memory bank" mechanism to more effectively evaluate image realism and stabilize the training process. To further enhance the quality of generated images, we develop a comprehensive training strategy. Our experimental results demonstrate that the proposed method outperforms existing state-of-the-art approaches in both quantitative metrics (i.e., FID and KID) and qualitative visual assessments, thus highlighting its effectiveness and superiority. Overall, our approach offers a robust solution for generating highly realistic traffic event images from UAV perspectives, effectively addressing the scarcity of real-world UAV-recorded traffic event data.  
 
-![](C:\Users\vvgod\Desktop\github\images\1.png)
+![](images/1.png)
 
 ## Key Features
 
@@ -53,13 +53,10 @@ Total images: 3,200
 
 This comprehensive dataset, combining synthetic and real images from various sources and conditions, ensures that our model can effectively learn to generate realistic UAV traffic event images across a wide range of scenarios. The diversity in road types, vehicles, weather conditions, lighting, and shooting angles enhances the dataset's representativeness.  
 
-## Results
-
-Our method demonstrates strong performance both in our primary task of UAV traffic event image generation and in general image-to-image translation tasks.  
-
-#### UAV Traffic Event Image Generation
 
 ## Results
+
+#### Results on Our Dataset
 
 Our method demonstrates strong performance compared to existing state-of-the-art models. The following table presents a comprehensive comparison:  
 
@@ -79,7 +76,7 @@ Note: Lower values for FID (Fréchet Inception Distance) and KID (Kernel Incepti
 
 As shown in the table, our proposed method achieves the best performance across all compared models, with the lowest FID (73.44) and KID (3.68) scores. This demonstrates the effectiveness of our approach in generating high-quality, realistic UAV traffic event images.  
 
-![[Your original results section] ](C:\Users\vvgod\Desktop\github\images\2.png)
+![[Your original results section] ](images/2.png)
 
 
 
@@ -121,4 +118,4 @@ These results demonstrate that our method achieves state-of-the-art performance 
 
 ## Citation
 
-If you find this work useful in your research, please consider citing our paper.
+If you find this work useful in your research, please consider citing our paper.‘’
