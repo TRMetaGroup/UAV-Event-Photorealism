@@ -116,6 +116,6 @@ Note: Bold numbers indicate the best performance for each metric.
 
 These results demonstrate that our method achieves state-of-the-art performance on gender swap tasks and competitive performance on eyeglasses manipulation tasks, showcasing its effectiveness across different image translation scenarios.
 
-## Citation
+## Usage & Citation
 
-If you find this work useful in your research, please consider citing our paper.‘’
+We will upload our code soon. If you find this work useful in your research, please consider citing our paper.
